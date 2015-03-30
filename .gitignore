@@ -1,3 +1,17 @@
+# Project specific
+*/Logfile.txt
+/Logfile.txt
+/Debug/*
+
+# Eclipse project files
+.cproject
+.project
+.settings/*
+
+# CMakeFiles
+Cmake*
+*/CMake*
+
 # Compiled Object files
 *.slo
 *.lo
