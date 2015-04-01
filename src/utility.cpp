@@ -84,7 +84,7 @@ bool readCharMaps(std::string const& file, CharMaps& characterMaps)
 		{
 			std::string line;
 			std::getline(inFile, line);
-			if(line.empty())
+			if (line.empty())
 				continue;
 			if (elemsLeft <= 0)
 			{
@@ -132,4 +132,28 @@ bool readCharMaps(std::string const& file, CharMaps& characterMaps)
 		std::cout << "File " << file << " could not be opened!" << std::endl;
 		return false;
 	}
+}
+
+std::string& encodeString(std::string& str)
+{
+#ifdef __WIN32
+	for (unsigned int i = 0; i < str.length(); i++)
+	{
+		if (str[i] == 'ä')
+			str[i] = '\x84';
+		else if (str[i] == 'ö')
+			str[i] = '\x94';
+		else if (str[i] == 'ü')
+			str[i] = '\x81';
+		else if (str[i] == 'ß')
+			str[i] = '\xE1';
+		else if (str[i] == 'Ä')
+			str[i] = '\x8E';
+		else if (str[i] == 'Ö')
+			str[i] = '\x99';
+		else if (str[i] == 'Ü')
+			str[i] = '\x9A';
+	}
+#endif
+	return str;
 }

@@ -46,4 +46,10 @@ bool writeCharMaps(std::string const& file, CharMaps const& characterMaps);
  */
 bool readCharMaps(std::string const& file, CharMaps& characterMaps);
 
+/**
+ * @brief Encodes a string such that it views correctly on the underlying OS (notably windows)
+ * @param str String to encode
+ */
+std::string& encodeString(std::string& str);
+
 #endif /* INCLUDE_UTILITY_H_ */
