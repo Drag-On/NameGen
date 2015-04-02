@@ -1,0 +1,17 @@
+# NameGen
+letterTable=out.txt
+amountOfWords=10
+minLetters=3
+maxLetters=10
+capFirst=true
+priorLength=2
+
+# Analyzer
+distMaxLength=6
+inputFile=list.txt
+outputFile=out.txt
+
+# CityNameGen
+preList=pre_GER.txt
+wordList=words_GER.txt
+postList=post_GER.txt

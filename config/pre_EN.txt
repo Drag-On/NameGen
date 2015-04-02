@@ -1,0 +1,24 @@
+Castle
+Stronghold
+Citadel
+Fastness
+Fort
+Fortification
+Fortress
+Hold
+Keep
+Manor
+Mansion
+Palace
+Safehold
+Fasthold
+Bastion
+Royal Residence
+
+Capital
+Metropolis
+City
+Town
+Township
+Trading Town
+Free City
